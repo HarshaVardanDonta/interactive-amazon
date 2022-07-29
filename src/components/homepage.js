@@ -1,21 +1,28 @@
 import '../index.css';
 import React from 'react'
-import Home1 from '../assets/homepage001.jpg';
 import Product1 from './product';
 import Product2 from './product2';
+import Product3 from './product3';
 import prod1 from '../assets/prod1.jpg';
 import prod2 from '../assets/prod2.jpg';
 import prod3 from '../assets/prod3.jpg';
 import prod4 from '../assets/prod4.jpg';
 import prod5 from '../assets/prod5.jpg';
 import prod6 from '../assets/prod6.jpg';
-
+import {RiArrowRightSLine} from 'react-icons/ri';
 
 export default function HomePage(){
     return(
         <>
             <div className="HomePage">
-                <img src={Home1} alt="img" />
+                <div className="Gradient">
+                    <Product3 name="test" img={prod1}/>
+                    <Product3 name="test" img={prod2}/>
+                    <Product3 name="test" img={prod3}/>
+                    <Product3 name="test" img={prod4}/>
+                    <Product3 name="test" img={prod5}/>
+                </div>
+                
                 <div className="Card1">
                     <Product1 name="BenQ GW2780 27-inch 1080p FHD Eye-Care, IPS Monitor, Ultra-Slim Bezel, 60 Hz, Brightness Intelligence, 2Wx2 Speakers, Tilt, HDMI, VGA, Display Port, Cable Management, Flicker-Free" 
                     img={prod1}/>
@@ -85,7 +92,7 @@ export default function HomePage(){
             </div>
             <div className="Footer">
                 <div className="row1">
-                    Have an idea to help us improve? Send feedback
+                    Have an idea to help us improve? Send feedback<RiArrowRightSLine/>
                 </div>
                 <hr/>
                 <div className="row2">

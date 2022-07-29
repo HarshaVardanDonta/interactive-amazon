@@ -59,13 +59,19 @@ body{
 }
 .Advt{
   display: flex;
-  height: 60%;
+  height: 80%;
   width: 350px;
-  background-color: rgb(255, 202, 129);
+  background-image:
+  linear-gradient(90deg,
+    rgb(166, 57, 57),
+    rgb(255, 202, 129));
+  /* background-color: rgb(255, 202, 129); */
   font-weight: 900;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
+  border-radius: 10px;
 }
 .Header2{
   display: flex;
@@ -189,7 +195,7 @@ body{
   color: white;
 }
 .DrawerHeader{
-  background-color: rgb(41, 33, 72);
+  background-color: #232f3e;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -253,7 +259,7 @@ body{
 }
 
 .HomePage{
-  width: 70%;
+  width: 80%;
   display: flex;
   height: 100%;
   background-color: rgb(234, 234, 234);
@@ -263,7 +269,6 @@ body{
 }
 .HomePage img{
   display: flex;
-  
   width: 100%;
   margin: auto;
 }
@@ -443,4 +448,72 @@ body{
   font-size: 20px;
   font-weight: 100;
   font-size: 15px;
+}
+.CartPage{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(234, 234, 234);
+}
+.CartRight{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  width: 20%;
+  height: 500px;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+.Cart{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* height: 150px; */
+  padding: 10px;
+  margin: 10px;
+  /* border-radius: 15px; */
+  /* background-color: white; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.InsideCart{
+  display: flex;
+  width: 97%;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Gradient{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-image:
+  linear-gradient(180deg,
+    rgba(0, 0, 0, 0),
+    rgb(234, 234, 234)), 
+    url('./assets/homepage001.jpg');
+}
+.Product3{
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+  /* height: 85%; */
+  border-radius: 8px;
+  padding: 10px;
+  text-overflow: clip;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  font-size: 14px;
 }
